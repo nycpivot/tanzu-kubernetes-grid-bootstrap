@@ -7,7 +7,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu
 
-wget https://github.com/nycpivot/tanzu-kubernetes-grid-bootstrap/blob/master/v1.1.2/tkg-linux-amd64-v1.1.2-vmware.1.gz?raw=true
+wget https://tanzufiles.blob.core.windows.net/tkg/tkg-linux-amd64-v1.1.2-vmware.1.gz
 gunzip tkg-linux-amd64-v1.1.2-vmware.1.gz
 sudo mv tkg-linux-amd64-v1.1.2-vmware.1 /usr/local/bin/tkg
 chmod +x /usr/local/bin/tkg
@@ -19,7 +19,7 @@ sudo ./aws/install
 
 "yes" | sudo apt install jq
 
-wget https://github.com/nycpivot/tanzu-kubernetes-grid-bootstrap/blob/master/v1.1.2/clusterawsadm-linux-amd64-v0.5.4-vmware-1.gz?raw=true
+wget https://tanzufiles.blob.core.windows.net/tkg/clusterawsadm-linux-amd64-v0.5.4-vmware-1.gz
 gunzip clusterawsadm-linux-amd64-v0.5.4-vmware-1.gz
 sudo mv clusterawsadm-linux-amd64-v0.5.4-vmware-1 /usr/local/bin/clusterawsadm
 chmod +x /usr/local/bin/clusterawsadm
